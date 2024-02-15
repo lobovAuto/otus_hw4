@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/lobov/workspace/otus/homework/otus_hw4/build",
+  "command": "/usr/bin/g++-13  -I/home/lobov/workspace/otus/homework/otus_hw4/components/ball -I/home/lobov/workspace/otus/homework/otus_hw4/components/color -I/home/lobov/workspace/otus/homework/otus_hw4/components/painter -I/home/lobov/workspace/otus/homework/otus_hw4/components/physics -I/home/lobov/workspace/otus/homework/otus_hw4/components/point -I/home/lobov/workspace/otus/homework/otus_hw4/components/velocity -I/home/lobov/workspace/otus/homework/otus_hw4/components/world -I/home/lobov/workspace/otus/homework/otus_hw4/black_box -g -Wall -Wextra -Wpedantic -o CMakeFiles/physics.dir/main.cpp.o -c /home/lobov/workspace/otus/homework/otus_hw4/main.cpp",
+  "file": "/home/lobov/workspace/otus/homework/otus_hw4/main.cpp"
+},
+{
+  "directory": "/home/lobov/workspace/otus/homework/otus_hw4/build",
+  "command": "/usr/bin/g++-13  -I/home/lobov/workspace/otus/homework/otus_hw4/components/ball -I/home/lobov/workspace/otus/homework/otus_hw4/components/color -I/home/lobov/workspace/otus/homework/otus_hw4/components/painter -I/home/lobov/workspace/otus/homework/otus_hw4/components/physics -I/home/lobov/workspace/otus/homework/otus_hw4/components/point -I/home/lobov/workspace/otus/homework/otus_hw4/components/velocity -I/home/lobov/workspace/otus/homework/otus_hw4/components/world -I/home/lobov/workspace/otus/homework/otus_hw4/black_box -g -Wall -Wextra -Wpedantic -o CMakeFiles/physics.dir/components/world/World.cpp.o -c /home/lobov/workspace/otus/homework/otus_hw4/components/world/World.cpp",
+  "file": "/home/lobov/workspace/otus/homework/otus_hw4/components/world/World.cpp"
+},
+{
+  "directory": "/home/lobov/workspace/otus/homework/otus_hw4/build",
+  "command": "/usr/bin/g++-13  -I/home/lobov/workspace/otus/homework/otus_hw4/components/ball -I/home/lobov/workspace/otus/homework/otus_hw4/components/color -I/home/lobov/workspace/otus/homework/otus_hw4/components/painter -I/home/lobov/workspace/otus/homework/otus_hw4/components/physics -I/home/lobov/workspace/otus/homework/otus_hw4/components/point -I/home/lobov/workspace/otus/homework/otus_hw4/components/velocity -I/home/lobov/workspace/otus/homework/otus_hw4/components/world -I/home/lobov/workspace/otus/homework/otus_hw4/black_box -g -Wall -Wextra -Wpedantic -o CMakeFiles/physics.dir/components/ball/Ball.cpp.o -c /home/lobov/workspace/otus/homework/otus_hw4/components/ball/Ball.cpp",
+  "file": "/home/lobov/workspace/otus/homework/otus_hw4/components/ball/Ball.cpp"
+},
+{
+  "directory": "/home/lobov/workspace/otus/homework/otus_hw4/build",
+  "command": "/usr/bin/g++-13  -I/home/lobov/workspace/otus/homework/otus_hw4/components/ball -I/home/lobov/workspace/otus/homework/otus_hw4/components/color -I/home/lobov/workspace/otus/homework/otus_hw4/components/painter -I/home/lobov/workspace/otus/homework/otus_hw4/components/physics -I/home/lobov/workspace/otus/homework/otus_hw4/components/point -I/home/lobov/workspace/otus/homework/otus_hw4/components/velocity -I/home/lobov/workspace/otus/homework/otus_hw4/components/world -I/home/lobov/workspace/otus/homework/otus_hw4/black_box -g -Wall -Wextra -Wpedantic -o CMakeFiles/physics.dir/components/physics/Physics.cpp.o -c /home/lobov/workspace/otus/homework/otus_hw4/components/physics/Physics.cpp",
+  "file": "/home/lobov/workspace/otus/homework/otus_hw4/components/physics/Physics.cpp"
+},
+{
+  "directory": "/home/lobov/workspace/otus/homework/otus_hw4/build",
+  "command": "/usr/bin/g++-13  -I/home/lobov/workspace/otus/homework/otus_hw4/components/ball -I/home/lobov/workspace/otus/homework/otus_hw4/components/color -I/home/lobov/workspace/otus/homework/otus_hw4/components/painter -I/home/lobov/workspace/otus/homework/otus_hw4/components/physics -I/home/lobov/workspace/otus/homework/otus_hw4/components/point -I/home/lobov/workspace/otus/homework/otus_hw4/components/velocity -I/home/lobov/workspace/otus/homework/otus_hw4/components/world -I/home/lobov/workspace/otus/homework/otus_hw4/black_box -g -Wall -Wextra -Wpedantic -o CMakeFiles/physics.dir/components/color/Color.cpp.o -c /home/lobov/workspace/otus/homework/otus_hw4/components/color/Color.cpp",
+  "file": "/home/lobov/workspace/otus/homework/otus_hw4/components/color/Color.cpp"
+},
+{
+  "directory": "/home/lobov/workspace/otus/homework/otus_hw4/build",
+  "command": "/usr/bin/g++-13  -I/home/lobov/workspace/otus/homework/otus_hw4/components/ball -I/home/lobov/workspace/otus/homework/otus_hw4/components/color -I/home/lobov/workspace/otus/homework/otus_hw4/components/painter -I/home/lobov/workspace/otus/homework/otus_hw4/components/physics -I/home/lobov/workspace/otus/homework/otus_hw4/components/point -I/home/lobov/workspace/otus/homework/otus_hw4/components/velocity -I/home/lobov/workspace/otus/homework/otus_hw4/components/world -I/home/lobov/workspace/otus/homework/otus_hw4/black_box -g -Wall -Wextra -Wpedantic -o CMakeFiles/physics.dir/components/painter/Painter.cpp.o -c /home/lobov/workspace/otus/homework/otus_hw4/components/painter/Painter.cpp",
+  "file": "/home/lobov/workspace/otus/homework/otus_hw4/components/painter/Painter.cpp"
+},
+{
+  "directory": "/home/lobov/workspace/otus/homework/otus_hw4/build",
+  "command": "/usr/bin/g++-13  -I/home/lobov/workspace/otus/homework/otus_hw4/components/ball -I/home/lobov/workspace/otus/homework/otus_hw4/components/color -I/home/lobov/workspace/otus/homework/otus_hw4/components/painter -I/home/lobov/workspace/otus/homework/otus_hw4/components/physics -I/home/lobov/workspace/otus/homework/otus_hw4/components/point -I/home/lobov/workspace/otus/homework/otus_hw4/components/velocity -I/home/lobov/workspace/otus/homework/otus_hw4/components/world -I/home/lobov/workspace/otus/homework/otus_hw4/black_box -g -Wall -Wextra -Wpedantic -o CMakeFiles/physics.dir/black_box/Application.cpp.o -c /home/lobov/workspace/otus/homework/otus_hw4/black_box/Application.cpp",
+  "file": "/home/lobov/workspace/otus/homework/otus_hw4/black_box/Application.cpp"
+},
+{
+  "directory": "/home/lobov/workspace/otus/homework/otus_hw4/build",
+  "command": "/usr/bin/g++-13  -I/home/lobov/workspace/otus/homework/otus_hw4/components/ball -I/home/lobov/workspace/otus/homework/otus_hw4/components/color -I/home/lobov/workspace/otus/homework/otus_hw4/components/painter -I/home/lobov/workspace/otus/homework/otus_hw4/components/physics -I/home/lobov/workspace/otus/homework/otus_hw4/components/point -I/home/lobov/workspace/otus/homework/otus_hw4/components/velocity -I/home/lobov/workspace/otus/homework/otus_hw4/components/world -I/home/lobov/workspace/otus/homework/otus_hw4/black_box -g -Wall -Wextra -Wpedantic -o CMakeFiles/physics.dir/black_box/View.cpp.o -c /home/lobov/workspace/otus/homework/otus_hw4/black_box/View.cpp",
+  "file": "/home/lobov/workspace/otus/homework/otus_hw4/black_box/View.cpp"
+},
+{
+  "directory": "/home/lobov/workspace/otus/homework/otus_hw4/build",
+  "command": "/usr/bin/g++-13  -I/home/lobov/workspace/otus/homework/otus_hw4/components/ball -I/home/lobov/workspace/otus/homework/otus_hw4/components/color -I/home/lobov/workspace/otus/homework/otus_hw4/components/painter -I/home/lobov/workspace/otus/homework/otus_hw4/components/physics -I/home/lobov/workspace/otus/homework/otus_hw4/components/point -I/home/lobov/workspace/otus/homework/otus_hw4/components/velocity -I/home/lobov/workspace/otus/homework/otus_hw4/components/world -I/home/lobov/workspace/otus/homework/otus_hw4/black_box -g -Wall -Wextra -Wpedantic -o CMakeFiles/physics.dir/black_box/PainterImpl.cpp.o -c /home/lobov/workspace/otus/homework/otus_hw4/black_box/PainterImpl.cpp",
+  "file": "/home/lobov/workspace/otus/homework/otus_hw4/black_box/PainterImpl.cpp"
+}
+]

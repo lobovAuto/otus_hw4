@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.7.2)
 project(physics)
 
 set(CMAKE_CXX_STANDARD 17)
-
+set(TARGET_NAME physics)
 # Пытаемся найти предустановленный SFML
 find_package(SFML COMPONENTS graphics)
 
@@ -31,12 +31,33 @@ if (MSVC)
     add_definitions(-D_USE_MATH_DEFINES)
 endif ()
 
+set (INCLUDE_DIRECTORIES
+    ${CMAKE_SOURCE_DIR}/components/ball
+    ${CMAKE_SOURCE_DIR}/components/color
+    ${CMAKE_SOURCE_DIR}/components/painter
+    ${CMAKE_SOURCE_DIR}/components/physics
+    ${CMAKE_SOURCE_DIR}/components/point
+    ${CMAKE_SOURCE_DIR}/components/velocity
+    ${CMAKE_SOURCE_DIR}/components/world
+    ${CMAKE_SOURCE_DIR}/black_box
+)
+
 add_executable(physics
-        main.cpp World.cpp Ball.cpp Physics.cpp Color.cpp Painter.cpp
-        black_box/Application.cpp black_box/View.cpp black_box/PainterImpl.cpp)
+        ${CMAKE_SOURCE_DIR}/main.cpp 
+        ${CMAKE_SOURCE_DIR}/components/world/World.cpp 
+        ${CMAKE_SOURCE_DIR}/components/ball/Ball.cpp 
+        ${CMAKE_SOURCE_DIR}/components/physics/Physics.cpp 
+        ${CMAKE_SOURCE_DIR}/components/color/Color.cpp 
+        ${CMAKE_SOURCE_DIR}/components/painter/Painter.cpp
+        ${CMAKE_SOURCE_DIR}/black_box/Application.cpp 
+        ${CMAKE_SOURCE_DIR}/black_box/View.cpp 
+        ${CMAKE_SOURCE_DIR}/black_box/PainterImpl.cpp
+)
 target_link_libraries(physics PRIVATE sfml-graphics)
 
-target_compile_options(physics PRIVATE
+target_include_directories(${TARGET_NAME} PRIVATE ${INCLUDE_DIRECTORIES})
+
+target_compile_options(${TARGET_NAME} PRIVATE
         $<$<CXX_COMPILER_ID:MSVC>:/W4>
         $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Wextra -Wpedantic>
         )

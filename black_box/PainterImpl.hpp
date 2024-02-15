@@ -1,5 +1,5 @@
 #pragma once
-#include "../Color.hpp"
+#include "Color.hpp"
 #include "View.hpp"
 #include <SFML/Graphics/Color.hpp>
 #include <SFML/System/Vector2.hpp>
