@@ -12,4 +12,9 @@ public:
     Point getCenter() const;
     double getRadius() const;
     double getMass() const;
+private:
+    Velocity velocity_pr;
+    Point center_pr;
+    double radius;
+    //double mass;
 };
