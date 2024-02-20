@@ -17,6 +17,7 @@ public:
     Point getCenter() const;
     double getRadius() const;
     double getMass() const;
+    bool isGhost(){return !isCollidable;};
 private:
     Velocity velocity;
     Point center_pr;
