@@ -2,6 +2,13 @@
 #include "Painter.hpp"
 #include <fstream>
 
+//Переопределение оператора >> для Point
+
+std::ifstream& operator>>(std::ifstream& stream, Point& rhs){
+    stream >> rhs.x >> rhs.y;
+    return stream;
+}
+
 // Длительность одного тика симуляции.
 // Подробнее см. update()
 // Изменять не следует
@@ -32,8 +39,8 @@ World::World(const std::string& worldFilePath) {
      * как и (red, green, blue). Опять же, можно упростить
      * этот код, научившись читать сразу Point, Color...
      */
-    double x;
-    double y;
+
+    Point point;
     double vx;
     double vy;
     double radius;
@@ -49,7 +56,7 @@ World::World(const std::string& worldFilePath) {
     while (stream.peek(), stream.good()) {
         // Читаем координаты центра шара (x, y) и вектор
         // его скорости (vx, vy)
-        stream >> x >> y >> vx >> vy;
+        stream >> point >> vx >> vy;
         // Читаем три составляющие цвета шара
         stream >> red >> green >> blue;
         // Читаем радиус шара
@@ -64,7 +71,7 @@ World::World(const std::string& worldFilePath) {
         // Здесь не хватает самого главного - создания
         // объекта класса Ball со свойствами, прочитанными
         // выше, и его помещения в контейнер balls
-
+        Ball * ball = new Ball;
         // После того как мы каким-то образом
         // сконструируем объект Ball ball;
         // добавьте его в конец контейнера вызовом

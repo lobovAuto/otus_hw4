@@ -1,3 +1,0 @@
-/home/lobov/workspace/otus/homework/otus_hw4/build/CMakeFiles/physics.dir
-/home/lobov/workspace/otus/homework/otus_hw4/build/CMakeFiles/edit_cache.dir
-/home/lobov/workspace/otus/homework/otus_hw4/build/CMakeFiles/rebuild_cache.dir
