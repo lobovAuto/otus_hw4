@@ -9,6 +9,16 @@ std::ifstream& operator>>(std::ifstream& stream, Point& rhs){
     return stream;
 }
 
+std::ifstream& operator>>(std::ifstream& stream, Color& rhs){
+    double red;
+    double green;
+    double blue;
+    stream >> red >> green >> blue;
+    Color tmp(red, green, blue);
+    rhs = tmp;
+    return stream;
+}
+
 // Длительность одного тика симуляции.
 // Подробнее см. update()
 // Изменять не следует
@@ -45,9 +55,7 @@ World::World(const std::string& worldFilePath) {
     double vy;
     double radius;
 
-    double red;
-    double green;
-    double blue;
+    Color color;
 
     bool isCollidable;
 
@@ -58,7 +66,7 @@ World::World(const std::string& worldFilePath) {
         // его скорости (vx, vy)
         stream >> point >> vx >> vy;
         // Читаем три составляющие цвета шара
-        stream >> red >> green >> blue;
+        stream >> color;
         // Читаем радиус шара
         stream >> radius;
         // Читаем свойство шара isCollidable, которое
