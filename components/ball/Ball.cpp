@@ -5,15 +5,16 @@
  * Задает скорость объекта
  * @param velocity новое значение скорости
  */
-void Ball::setVelocity(const Velocity& velocity) {
-    velocity_pr=velocity;
+
+void Ball::setVelocity(const Velocity& velocity_in) {
+    velocity=velocity_in;
 }
 
 /**
  * @return скорость объекта
  */
 Velocity Ball::getVelocity() const {
-    return velocity_pr;
+    return velocity;
 }
 
 /**

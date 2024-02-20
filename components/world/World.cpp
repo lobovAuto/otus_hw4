@@ -51,8 +51,7 @@ World::World(const std::string& worldFilePath) {
      */
 
     Point point;
-    double vx;
-    double vy;
+    Point velocity;
     double radius;
 
     Color color;
@@ -64,7 +63,7 @@ World::World(const std::string& worldFilePath) {
     while (stream.peek(), stream.good()) {
         // Читаем координаты центра шара (x, y) и вектор
         // его скорости (vx, vy)
-        stream >> point >> vx >> vy;
+        stream >> point >> velocity;
         // Читаем три составляющие цвета шара
         stream >> color;
         // Читаем радиус шара
@@ -79,11 +78,11 @@ World::World(const std::string& worldFilePath) {
         // Здесь не хватает самого главного - создания
         // объекта класса Ball со свойствами, прочитанными
         // выше, и его помещения в контейнер balls
-        Ball * ball = new Ball;
+        Ball  ball (point, color, isCollidable, radius, velocity);
         // После того как мы каким-то образом
         // сконструируем объект Ball ball;
         // добавьте его в конец контейнера вызовом
-        // balls.push_back(ball);
+        balls.push_back(ball);
     }
 }
 
